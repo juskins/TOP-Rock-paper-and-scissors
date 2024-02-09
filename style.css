@@ -84,7 +84,7 @@ img{
      gap: 5rem;
 }
 
-.scoreboard-main img{
+.scoreboard-main img,.robot{
      border-radius: 50%;
      border: 10px solid #ccc;
      height: 100px;
@@ -136,10 +136,7 @@ img{
 .game-choices img{
      border: 10px solid red;
 }
-.game-choices img:active{
-     transform: scale(1.5);
-     margin: 20px;
-}
+
 .game-choices img:hover{
      filter: brightness(0.8);
 }

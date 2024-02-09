@@ -94,7 +94,7 @@ function updateScoreBoard(){
      gameDiv.style.display = 'block';
           setTimeout(() => {
                gameDiv.style.display = 'none';
-          }, 1000);
+          }, 2500);
 }
 
 
