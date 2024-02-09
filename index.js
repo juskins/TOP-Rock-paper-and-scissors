@@ -2,6 +2,8 @@ const rock = document.querySelector('.rock');
 const paper = document.querySelector('.paper')
 const scissors = document.querySelector('.scissors');
 const showPlayerScore = document.querySelector('.player-score');
+const player1Pick = document.querySelector('.player1-pick');
+const computerPick = document.querySelector('.computer-pick');
 const showComputerScore= document.querySelector('.computer-score');
 const endGame = document.querySelector('.end-game');
 const gameDiv = document.querySelector('.game-picks');
@@ -33,7 +35,8 @@ function getComputerChoice(){
      else{
           displayComputerSelection.style.color = 'red'
      }
-     displayPlayerSelection.style.fontSize = '2rem'
+     displayPlayerSelection.style.fontSize = '2rem';
+     computerPick.innerHTML = `<img src='images/${gamePicks[randNum]}.jfif'>`
      return gamePicks[randNum];
 }
 
@@ -94,7 +97,7 @@ function updateScoreBoard(){
      gameDiv.style.display = 'block';
           setTimeout(() => {
                gameDiv.style.display = 'none';
-          }, 2500);
+          }, 2700);
 }
 
 
@@ -163,6 +166,7 @@ setInterval(() => {
 rock.addEventListener('click',()=>{
      if(gameEnded || endGame.textContent == 'Play game') return;
      console.log(playRound(getPlayerChoice('rock'),getComputerChoice()));
+     player1Pick.innerHTML = "<img src='images/rock.jfif'>"
      trials--;
      finalWinner.textContent = 'GAME ON'
     checkTrials(trials);
@@ -176,6 +180,7 @@ rock.addEventListener('click',()=>{
  paper.addEventListener('click',()=>{
      if(gameEnded || endGame.textContent == 'Play game') return;
       console.log(playRound(getPlayerChoice('paper'),getComputerChoice()));
+      player1Pick.innerHTML = "<img src='images/paper.jfif'>";
       trials--;
      finalWinner.textContent = 'GAME ON'
      checkTrials(trials);
@@ -189,6 +194,7 @@ rock.addEventListener('click',()=>{
   scissors.addEventListener('click',()=>{
      if(gameEnded || endGame.textContent == 'Play game') return;
       console.log(playRound(getPlayerChoice('scissors'),getComputerChoice()))
+      player1Pick.innerHTML = "<img src='images/scissors.jfif'>";
       trials--;
      finalWinner.textContent = 'GAME ON'
      checkTrials(trials);
