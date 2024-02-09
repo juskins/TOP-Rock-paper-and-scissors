@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Juskin rock paper scissors Game</title>
+     <link rel="stylesheet" href="style.css">
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300&display=swap');
+     </style>
+</head>
+<body>
+     
+<div class="container">
+     <div class="header"> 
+          <div class="section">
+               <div class="scoreboard">
+                    <div class="scoreboard-header">
+                         <div class="live-div"><span class="dot">&#183;</span> live</div>
+                         <div class="author">Rock Paper Scissors</div>
+                         <div class="trials">5</div>
+                    </div>
+
+                    <div class="scoreboard-main">
+                         <div class="player-div">
+                              <div class="player-img"><img src="images/avatar.PNG" alt="player-pic"></div>
+                              <h3>Player 1</h3>
+                         </div>
+                         <div class="score-div">
+                              <p class="match-date"></p>
+                              <div class="score">
+                                   <h1><span class="player-score">0</span>:<span class="computer-score">0</span></h1>
+                              </div>
+                              <p class="final-winner"></p>
+                             
+                              <button class="end-game">Play game</button>
+                         </div>
+                         <div class="computer-div">
+                              <div class="computer-img">
+                                   <div><img src="images/robot.jfif" alt="player-pic"></div>
+                                   <h3>Computer</h3>
+                              </div>
+                              
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+    <div class="gifs-div">
+          <div class="gif1">
+               🎉
+          </div>
+          <div class="gif2">
+               🎉
+          </div>
+          <div class="gif3">
+               🎉
+          </div>
+          <div class="gif4">
+               🎉
+          </div>
+    </div>
+
+     <div class="game-picks">
+          <div class="players-pick">
+               <div style="text-align: center;">
+                    <h2>You picked</h2>
+                    <h1 class="player-selection"></h1>
+               </div>
+               <div>
+                    <h2>Computer Picked </h2>
+                    <h1 class="computer-selection"></h1>
+               </div>
+               
+          </div>
+
+          <div class="players-choice">
+               <div class="player1-pick">
+                    <img src="images/avatar.PNG" alt="">
+               </div>
+               <div class="game-result">
+                    <h2 class="output"></h2>
+               </div>
+               <div class="computer-pick">
+                    <img src="images/avatar.PNG" alt="">
+               </div>
+          </div>
+     </div>
+
+     <div class="game-choices">
+          <div class="top-choices">
+               <img src="images/rocks.jfif" alt="" class="rock">
+               <img src="images/paper.jfif" alt="" class="paper">
+               <img src="images/scissors.jfif" alt="" class="scissors">
+          </div>
+     </div>
+</div>
+     
+     
+    
+     <script src="index.js"></script>
+</body>
+</html>
