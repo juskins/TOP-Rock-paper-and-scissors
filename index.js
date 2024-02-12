@@ -227,6 +227,7 @@ rock.addEventListener('click',()=>{
           endGame.style.backgroundColor = "#41206f"
           playerScore = 0;
           computerScore = 0;
+          finalWinner.textContent = 'GAME ON'
           showPlayerScore.textContent = playerScore;
           showComputerScore.textContent = computerScore;
           gameEnded = false;
