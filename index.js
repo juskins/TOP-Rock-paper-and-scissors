@@ -71,21 +71,20 @@ function playRound(player, computer){
                
                output.textContent = 'PLayer WINS!!!!'
           }
-          else if(player === computer){
-               winner = 'Nobody'
-               output.textContent = 'It is a TIE!!!!'
-          }
-          else{
-               winner = 'computer';
-               computerScore +=1;
-               
-               output.textContent = 'Computer WINS!!!!'
-          }
-         
+     else if(player === computer){
+          winner = 'Nobody'
+          output.textContent = 'It is a TIE!!!!'
+     }
+     else{
+          winner = 'computer';
+          computerScore +=1;
+          output.textContent = 'Computer WINS!!!!'
+     }
+     
 
-          return (`computer plays: ${computer}
-          You play: ${player}
-          ${winner} WINS!!!!!!!`) 
+     return (`computer plays: ${computer}
+     You play: ${player}
+     ${winner} WINS!!!!!!!`) 
           
      }
 
@@ -139,11 +138,9 @@ function checkTrials(trials){
                }
           else if(playerScore < computerScore){
                finalWinner.textContent = 'COMPUTER WON';
-               
-
           }
           else{
-               finalWinner.textContent = 'IT\'S A DRAW'
+               finalWinner.textContent = 'GAME ENDED IN A DRAW'
           }
           endgame();
      }
