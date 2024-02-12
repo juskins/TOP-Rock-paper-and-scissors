@@ -105,6 +105,7 @@ function endgame(){
      showPlayerScore.textContent = playerScore;
      showComputerScore.textContent = computerScore;
      endGame.textContent = 'Game Ended';
+     finalWinner.textContent = 'GAME ON'
      displaytrials.textContent = '-' + trials;
      setTimeout(() => {
           endGame.textContent = 'Play Again'
